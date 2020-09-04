@@ -2,6 +2,8 @@
 
 A custom theme for Microsoft Teams:tm: that is designed to hook into [PyWal](https://github.com/dylanaraps/pywal)
 
+Note: This theme is a work in progress and does not have full coverage
+
 ## Screenshot
 
 ![screenshot](screenshot.png)
