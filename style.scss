@@ -1,0 +1,111 @@
+@import "colors";
+
+// Hide download app button
+get-app-button, .app-bar .app-bar-selected::before {
+    display: none !important;
+}
+
+// Messages
+message-list, message-pane,
+.item-wrap, .message-list-divider-text,
+.ts-add-message, .ts-new-message-footer,
+.ts-messages-header, .ts-message-thread-body,
+.ts-reply-message, .message-body,
+.thread-body, .message-reactions-view,
+.thread-action-reply-message button,
+.ts-left-rail-wrapper, .popover,
+.message-reaction-container {
+    background: $background !important;
+}
+
+.ts-messages-header {
+    border-bottom: 1px solid $color6;
+}
+
+.app-tabs-list-item {
+    &.app-tabs-selected a {
+        color: $color6 !important;
+        border-bottom-color: $color6 !important;
+    }
+    a {
+        color: $foreground !important;
+    }
+}
+
+// Font color
+.message-list-divider-text, .content,
+.ts-text-watermark, .ts-edit-box,
+.channel-name, .ts-reply-message,
+.message-body, .thread-body,
+.thread-action-reply-message button span,
+.preview-container .title,
+.ts-left-rail-wrapper * {
+    color: $foreground !important;
+}
+
+.thread-action-reply-message button, .message-body,
+.ts-message-thread-body {
+    border-color: $color3 !important;
+}
+
+.conversation-reply .thread-body,
+thread-collapsed .message-body {
+    border-bottom: 1px solid $color3;
+}
+
+.message-datetime, .preview-container .description {
+    color: $color3 !important;
+}
+
+.preview-container .domain {
+    color: $color5 !important;
+}
+
+.ts-new-message-footer {
+    border: 3px solid $color6;
+}
+
+.ts-new-message-footer::after {
+    border-bottom: none !important;
+}
+
+.ts-left-rail-wrapper {
+    border-right: 1px solid $color6;
+}
+
+.left-rail-selected, .channel-list-channels li:hover,
+.channel-list-team-header:hover, .app-bar-selected {
+    background: $color1 !important;
+}
+
+.app-header-bar, .app-bar {
+    // background: darken($background, 1%) !important;
+    background: $background !important;
+}
+
+.app-header-bar {
+    border-bottom: 1px solid $color6;
+}
+
+.app-bar, .app-bar-selected {
+    border-right: 1px solid $color6 !important;
+}
+
+.popover {
+    border: 1px solid $color1;
+}
+
+.edit-indicator {
+    color: $color3 !important;
+}
+
+// .app-bar {
+//     background: $color3 !important;
+// }
+
+svg > g,
+.thread-action-reply-message button svg,
+.team-create-button-container svg path,
+.icons-more svg {
+    fill: $foreground !important;
+}
